@@ -16,13 +16,10 @@
     <Filter Include="Source Files\Chapter02">
       <UniqueIdentifier>{44b45124-096b-43e0-933d-d1040d5c5dd0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter02\Triangle">
-      <UniqueIdentifier>{e240dc9c-461b-410e-aaa9-1f5c8e359840}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Triangle.cpp">
-      <Filter>Source Files\Chapter02\Triangle</Filter>
+    <ClCompile Include="Bounce.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
