@@ -16,10 +16,13 @@
     <Filter Include="Source Files\Chapter02">
       <UniqueIdentifier>{44b45124-096b-43e0-933d-d1040d5c5dd0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter03">
+      <UniqueIdentifier>{73b40a14-f641-4b01-b6c3-4fd17daf67b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bounce.cpp">
-      <Filter>Source Files\Chapter02</Filter>
+    <ClCompile Include="Smooth.cpp">
+      <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
