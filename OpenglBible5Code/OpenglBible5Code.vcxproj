@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Smooth.cpp" />
+    <ClCompile Include="ShpereWorld4.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6832A303-1927-40F4-8DFA-AA73716C74D1}</ProjectGuid>

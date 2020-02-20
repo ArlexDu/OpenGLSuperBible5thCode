@@ -11,7 +11,7 @@
 #include <GL/glut.h>
 #endif
 
-#pragma comment(lib,"gltools.lib");
+#pragma comment(lib,"gltools.lib")
 
 GLShaderManager shaderManager;
 GLFrustum viewFrustum;
