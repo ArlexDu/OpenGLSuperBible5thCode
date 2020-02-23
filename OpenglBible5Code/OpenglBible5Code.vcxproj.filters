@@ -25,10 +25,27 @@
     <Filter Include="Source Files\Chapter05">
       <UniqueIdentifier>{d64efacc-242d-4172-8730-6968016e5102}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter06">
+      <UniqueIdentifier>{719f7442-7fb5-4658-a960-c649ce3102f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter05\Anisotropic\Anisotropic.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.fp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
+    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.vp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
+    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.fp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
+    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.vp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter06\ProvokingVertex\ProvokingVertex.cpp">
+      <Filter>Source Files\Chapter06</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
