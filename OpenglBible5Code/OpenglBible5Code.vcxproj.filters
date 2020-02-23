@@ -19,10 +19,16 @@
     <Filter Include="Source Files\Chapter03">
       <UniqueIdentifier>{73b40a14-f641-4b01-b6c3-4fd17daf67b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter04">
+      <UniqueIdentifier>{cdf135ad-3f6d-4c86-ac8b-fd36651be17b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05">
+      <UniqueIdentifier>{d64efacc-242d-4172-8730-6968016e5102}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ShpereWorld4.cpp">
-      <Filter>Source Files\Chapter03</Filter>
+    <ClCompile Include="Chapter05\Anisotropic\Anisotropic.cpp">
+      <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
