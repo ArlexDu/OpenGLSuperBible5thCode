@@ -19,13 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.fp" />
-    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.vp" />
-    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.fp" />
-    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.vp" />
+    <ClCompile Include="Chapter06\ToonShader\ToonShader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter06\ProvokingVertex\ProvokingVertex.cpp" />
+    <None Include="Chapter06\ToonShader\ToonShader.fp" />
+    <None Include="Chapter06\ToonShader\ToonShader.vp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6832A303-1927-40F4-8DFA-AA73716C74D1}</ProjectGuid>

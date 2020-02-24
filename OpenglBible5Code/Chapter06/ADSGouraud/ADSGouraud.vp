@@ -1,0 +1,65 @@
+// ADS Point lighting Shader
+// Vertex Shader
+// Richard S. Wright Jr.
+// OpenGL SuperBible
+#version 130
+
+// 每个顶点的坐标
+in vec4 vVertex;
+// 每个顶点的法线
+in vec3 vNormal;
+
+// 环境光颜色
+uniform vec4    ambientColor;
+// 漫反射光颜色
+uniform vec4    diffuseColor;	
+// 镜面反射光颜色
+uniform vec4    specularColor;
+
+// 视图坐标系下的光源位置
+uniform vec3	vLightPosition;
+// 模型视图投影矩阵
+uniform mat4	mvpMatrix;
+// 模型视图矩阵
+uniform mat4	mvMatrix;
+// 法向矩阵 将法线转化到视图坐标系中
+uniform mat3	normalMatrix;
+
+// Color to fragment program
+smooth out vec4 vVaryingColor;
+
+void main(void) 
+    { 
+    // 获得视图坐标系下的定点法线
+    vec3 vEyeNormal = normalMatrix * vNormal;
+
+    // 获得视图坐标系下的顶点坐标
+    vec4 vPosition4 = mvMatrix * vVertex;
+    vec3 vPosition3 = vPosition4.xyz / vPosition4.w;
+
+    // 获得视图坐标系下的光线向量
+    vec3 vLightDir = normalize(vLightPosition - vPosition3);
+
+    // 通过点乘获得漫反射强度
+    float diff = max(0.0, dot(vEyeNormal, vLightDir));
+
+    // 用漫反射强度乘以颜色值，设置透明度为1
+    vVaryingColor = diff * diffuseColor;
+
+    // 加入环境光
+    vVaryingColor += ambientColor;
+
+
+    // 计算镜面反射光线
+	// reflect(vec l, vec N) 通过入射向量l和表面方向N求出反射光线
+    vec3 vReflection = normalize(reflect(-vLightDir, vEyeNormal));
+    float spec = max(0.0, dot(vEyeNormal, vReflection));
+    if(diff != 0) {
+        float fSpec = pow(spec, 128.0);
+        vVaryingColor.rgb += vec3(fSpec, fSpec, fSpec);
+	}
+
+
+    // Don't forget to transform the geometry!
+    gl_Position = mvpMatrix * vVertex;
+    }

@@ -1,0 +1,43 @@
+// Simple Diffuse lighting Shader
+// Vertex Shader
+// Richard S. Wright Jr.
+// OpenGL SuperBible
+// 将左右的坐标统一放置在视图坐标系下，进行计算
+#version 130
+
+// Incoming per vertex... position and normal
+in vec4 vVertex;
+in vec3 vNormal;
+
+// Set per batch
+uniform vec4	diffuseColor;	
+uniform vec3	vLightPosition;
+uniform mat4	mvpMatrix;
+uniform mat4	mvMatrix;
+uniform mat3	normalMatrix;
+
+// Color to fragment program
+smooth out vec4 vVaryingColor;
+
+void main(void) 
+    { 
+    // 获取表面法线的视觉坐标
+    vec3 vEyeNormal = normalMatrix * vNormal;
+
+    // 获得顶点位置的视觉坐标
+    vec4 vPosition4 = mvMatrix * vVertex;
+    vec3 vPosition3 = vPosition4.xyz / vPosition4.w;
+
+    // 获得光源的向量
+    vec3 vLightDir = normalize(vLightPosition - vPosition3);
+
+    // 点积获得漫反射的强度
+    float diff = max(0.0, dot(vEyeNormal, vLightDir));
+
+    // 用强度乘以漫反射颜色
+    vVaryingColor.rgb = diff * diffuseColor.rgb;
+    vVaryingColor.a = diffuseColor.a;
+
+    // 对多边形进行变换
+    gl_Position = mvpMatrix * vVertex;
+    }

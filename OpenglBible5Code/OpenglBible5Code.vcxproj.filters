@@ -30,22 +30,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.fp">
-      <Filter>Source Files\Chapter06</Filter>
-    </None>
-    <None Include="Chapter06\ProvokingVertex\ProvokingVertex.vp">
-      <Filter>Source Files\Chapter06</Filter>
-    </None>
-    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.fp">
-      <Filter>Source Files\Chapter06</Filter>
-    </None>
-    <None Include="Chapter06\ShadedTriangle\ShadedIdentity.vp">
-      <Filter>Source Files\Chapter06</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Chapter06\ProvokingVertex\ProvokingVertex.cpp">
+    <ClCompile Include="Chapter06\ToonShader\ToonShader.cpp">
       <Filter>Source Files\Chapter06</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chapter06\ToonShader\ToonShader.fp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
+    <None Include="Chapter06\ToonShader\ToonShader.vp">
+      <Filter>Source Files\Chapter06</Filter>
+    </None>
   </ItemGroup>
 </Project>

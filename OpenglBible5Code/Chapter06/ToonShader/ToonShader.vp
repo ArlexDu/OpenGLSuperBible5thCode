@@ -1,0 +1,37 @@
+// Cell lighting Shader
+// Vertex Shader
+// Richard S. Wright Jr.
+// OpenGL SuperBible
+// 顶点着色器的作用除了变换几何图形以外，还输出一个插值的纹理坐标
+#version 130
+
+// Incoming per vertex... position and normal
+in vec4 vVertex;
+in vec3 vNormal;
+
+smooth out float textureCoordinate;
+
+uniform vec3	vLightPosition;
+uniform mat4	mvpMatrix;
+uniform mat4	mvMatrix;
+uniform mat3	normalMatrix;
+
+
+void main(void) 
+    { 
+    // Get surface normal in eye coordinates
+    vec3 vEyeNormal = normalMatrix * vNormal;
+
+    // Get vertex position in eye coordinates
+    vec4 vPosition4 = mvMatrix * vVertex;
+    vec3 vPosition3 = vPosition4.xyz / vPosition4.w;
+
+    // Get vector to light source
+    vec3 vLightDir = normalize(vLightPosition - vPosition3);
+
+    // 因为漫反射强度的范围是0~1，而一维纹理单元的坐标也是0~1，所以可以用这个漫反射强度作为纹理坐标
+    textureCoordinate = max(0.0, dot(vEyeNormal, vLightDir));
+
+    // Don't forget to transform the geometry!
+    gl_Position = mvpMatrix * vVertex;
+    }
