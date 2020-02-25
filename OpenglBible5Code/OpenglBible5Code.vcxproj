@@ -19,11 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter06\ToonShader\ToonShader.cpp" />
+    <ClCompile Include="Chapter07\MultiTexture\MultiTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Chapter06\ToonShader\ToonShader.fp" />
-    <None Include="Chapter06\ToonShader\ToonShader.vp" />
+    <Image Include="Chapter07\MultiTexture\neg_x.tga" />
+    <Image Include="Chapter07\MultiTexture\neg_y.tga" />
+    <Image Include="Chapter07\MultiTexture\neg_z.tga" />
+    <Image Include="Chapter07\MultiTexture\pos_x.tga" />
+    <Image Include="Chapter07\MultiTexture\pos_y.tga" />
+    <Image Include="Chapter07\MultiTexture\pos_z.tga" />
+    <Image Include="Chapter07\MultiTexture\tarnish.tga" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chapter07\MultiTexture\Reflection.fp" />
+    <None Include="Chapter07\MultiTexture\Reflection.vp" />
+    <None Include="Chapter07\MultiTexture\SkyBox.fp" />
+    <None Include="Chapter07\MultiTexture\SkyBox.vp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6832A303-1927-40F4-8DFA-AA73716C74D1}</ProjectGuid>

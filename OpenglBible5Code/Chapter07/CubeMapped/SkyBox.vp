@@ -1,0 +1,23 @@
+// Skybox Shader
+// Vertex Shader
+// Richard S. Wright Jr.
+// OpenGL SuperBible
+#version 130
+
+// Incoming per vertex... just the position
+in vec4 vVertex;
+
+uniform mat4   mvpMatrix;  // Transformation matrix
+
+// Texture Coordinate to fragment program
+out vec3 vVaryingTexCoord;
+
+
+void main(void) 
+    {
+    // 将模型坐标系下的定点位置设置为纹理坐标
+    vVaryingTexCoord = normalize(vVertex.xyz);
+
+    // 应用MVP矩阵，将模型转化到视图坐标系下
+    gl_Position = mvpMatrix * vVertex;
+    }

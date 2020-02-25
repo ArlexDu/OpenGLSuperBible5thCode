@@ -28,18 +28,50 @@
     <Filter Include="Source Files\Chapter06">
       <UniqueIdentifier>{719f7442-7fb5-4658-a960-c649ce3102f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter07">
+      <UniqueIdentifier>{8751818d-7f41-4e71-a0a4-52580531f5db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter06\ToonShader\ToonShader.cpp">
-      <Filter>Source Files\Chapter06</Filter>
+    <ClCompile Include="Chapter07\MultiTexture\MultiTexture.cpp">
+      <Filter>Source Files\Chapter07</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Chapter06\ToonShader\ToonShader.fp">
-      <Filter>Source Files\Chapter06</Filter>
+    <Image Include="Chapter07\MultiTexture\neg_x.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\neg_y.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\neg_z.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\pos_x.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\pos_y.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\pos_z.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\MultiTexture\tarnish.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chapter07\MultiTexture\Reflection.fp">
+      <Filter>Source Files\Chapter07</Filter>
     </None>
-    <None Include="Chapter06\ToonShader\ToonShader.vp">
-      <Filter>Source Files\Chapter06</Filter>
+    <None Include="Chapter07\MultiTexture\Reflection.vp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+    <None Include="Chapter07\MultiTexture\SkyBox.fp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+    <None Include="Chapter07\MultiTexture\SkyBox.vp">
+      <Filter>Source Files\Chapter07</Filter>
     </None>
   </ItemGroup>
 </Project>
