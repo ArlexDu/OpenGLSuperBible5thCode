@@ -33,45 +33,124 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter07\MultiTexture\MultiTexture.cpp">
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenglBible5Code.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Chapter07\TextureArrays\moon00.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon01.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon02.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon03.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon04.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon05.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon06.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon07.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon08.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon09.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon10.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon11.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon12.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon13.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon14.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon15.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon16.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon17.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon18.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon19.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon20.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon21.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon22.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon23.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon24.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon25.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon26.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon27.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\moon28.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+    <Image Include="Chapter07\TextureArrays\star.tga">
+      <Filter>Source Files\Chapter07</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chapter07\TextureArrays\MoonShader.fp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+    <None Include="Chapter07\TextureArrays\MoonShader.vp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+    <None Include="Chapter07\TextureArrays\StarField.fp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+    <None Include="Chapter07\TextureArrays\StarField.vp">
+      <Filter>Source Files\Chapter07</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter07\TextureArrays\TextureArrays.cpp">
       <Filter>Source Files\Chapter07</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Chapter07\MultiTexture\neg_x.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\neg_y.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\neg_z.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\pos_x.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\pos_y.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\pos_z.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-    <Image Include="Chapter07\MultiTexture\tarnish.tga">
-      <Filter>Source Files\Chapter07</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Chapter07\MultiTexture\Reflection.fp">
-      <Filter>Source Files\Chapter07</Filter>
-    </None>
-    <None Include="Chapter07\MultiTexture\Reflection.vp">
-      <Filter>Source Files\Chapter07</Filter>
-    </None>
-    <None Include="Chapter07\MultiTexture\SkyBox.fp">
-      <Filter>Source Files\Chapter07</Filter>
-    </None>
-    <None Include="Chapter07\MultiTexture\SkyBox.vp">
-      <Filter>Source Files\Chapter07</Filter>
-    </None>
   </ItemGroup>
 </Project>

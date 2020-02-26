@@ -1,0 +1,22 @@
+// MoonShader
+// Vertex Shader
+// Richard S. Wright Jr.
+// OpenGL SuperBible
+#version 130
+
+in vec4 vVertex;
+in vec4 vTexCoords;
+
+uniform mat4 mvpMatrix;
+uniform float fTime;
+
+smooth out vec3 vMoonCoords;
+
+void main(void) 
+    { 
+	//将batch传入的二维纹理坐标，保留s和t坐标，同时加入p坐标，完成三维纹理坐标的建立
+    vMoonCoords.st = vTexCoords.st;
+    vMoonCoords.p = int(fTime);
+
+    gl_Position = mvpMatrix * vVertex;
+    }
