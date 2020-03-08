@@ -25,45 +25,14 @@
     <ResourceCompile Include="OpenglBible5Code.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Chapter07\TextureArrays\moon00.tga" />
-    <Image Include="Chapter07\TextureArrays\moon01.tga" />
-    <Image Include="Chapter07\TextureArrays\moon02.tga" />
-    <Image Include="Chapter07\TextureArrays\moon03.tga" />
-    <Image Include="Chapter07\TextureArrays\moon04.tga" />
-    <Image Include="Chapter07\TextureArrays\moon05.tga" />
-    <Image Include="Chapter07\TextureArrays\moon06.tga" />
-    <Image Include="Chapter07\TextureArrays\moon07.tga" />
-    <Image Include="Chapter07\TextureArrays\moon08.tga" />
-    <Image Include="Chapter07\TextureArrays\moon09.tga" />
-    <Image Include="Chapter07\TextureArrays\moon10.tga" />
-    <Image Include="Chapter07\TextureArrays\moon11.tga" />
-    <Image Include="Chapter07\TextureArrays\moon12.tga" />
-    <Image Include="Chapter07\TextureArrays\moon13.tga" />
-    <Image Include="Chapter07\TextureArrays\moon14.tga" />
-    <Image Include="Chapter07\TextureArrays\moon15.tga" />
-    <Image Include="Chapter07\TextureArrays\moon16.tga" />
-    <Image Include="Chapter07\TextureArrays\moon17.tga" />
-    <Image Include="Chapter07\TextureArrays\moon18.tga" />
-    <Image Include="Chapter07\TextureArrays\moon19.tga" />
-    <Image Include="Chapter07\TextureArrays\moon20.tga" />
-    <Image Include="Chapter07\TextureArrays\moon21.tga" />
-    <Image Include="Chapter07\TextureArrays\moon22.tga" />
-    <Image Include="Chapter07\TextureArrays\moon23.tga" />
-    <Image Include="Chapter07\TextureArrays\moon24.tga" />
-    <Image Include="Chapter07\TextureArrays\moon25.tga" />
-    <Image Include="Chapter07\TextureArrays\moon26.tga" />
-    <Image Include="Chapter07\TextureArrays\moon27.tga" />
-    <Image Include="Chapter07\TextureArrays\moon28.tga" />
-    <Image Include="Chapter07\TextureArrays\star.tga" />
+    <ClCompile Include="Chapter08\pix_buffs\pix_buffs.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Chapter07\TextureArrays\MoonShader.fp" />
-    <None Include="Chapter07\TextureArrays\MoonShader.vp" />
-    <None Include="Chapter07\TextureArrays\StarField.fp" />
-    <None Include="Chapter07\TextureArrays\StarField.vp" />
+    <None Include="Chapter08\pix_buffs\blur.fs" />
+    <None Include="Chapter08\pix_buffs\blur.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter07\TextureArrays\TextureArrays.cpp" />
+    <Image Include="Chapter08\pix_buffs\Marble.bmp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6832A303-1927-40F4-8DFA-AA73716C74D1}</ProjectGuid>
