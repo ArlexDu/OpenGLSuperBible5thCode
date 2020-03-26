@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Models\Ninja\sbm.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -26,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chapter08\pix_buffs\pix_buffs.cpp" />
+    <ClCompile Include="Models\Ninja\sbm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Chapter08\pix_buffs\blur.fs" />
